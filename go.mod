@@ -29,7 +29,7 @@ require (
 	github.com/google/go-github/v36 v36.0.0
 	github.com/google/slowjam v1.0.0
 	github.com/google/uuid v1.3.0
-	github.com/hashicorp/go-getter v1.5.9
+	github.com/hashicorp/go-getter v1.6.2
 	github.com/hashicorp/go-retryablehttp v0.7.0
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/hectane/go-acl v0.0.0-20190604041725-da78bae5fc95 // indirect
@@ -82,7 +82,7 @@ require (
 	golang.org/x/mod v0.5.1
 	golang.org/x/oauth2 v0.0.0-20211005180243-6b3c2da341f1
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20211025201205-69cdffdb9359
+	golang.org/x/sys v0.0.0-20220517195934-5e4e11fc645e
 	golang.org/x/term v0.0.0-20210406210042-72f3dc4e9b72
 	golang.org/x/text v0.3.7
 	gonum.org/v1/plot v0.10.0
