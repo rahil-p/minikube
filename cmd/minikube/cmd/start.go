@@ -32,7 +32,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Delta456/box-cli-maker/v2"
 	"github.com/blang/semver/v4"
 	"github.com/docker/go-connections/nat"
 	"github.com/docker/machine/libmachine/ssh"
@@ -47,7 +46,6 @@ import (
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 
-	"k8s.io/klog/v2"
 	cmdcfg "k8s.io/minikube/cmd/minikube/cmd/config"
 	"k8s.io/minikube/pkg/drivers/kic/oci"
 	"k8s.io/minikube/pkg/minikube/bootstrapper/bsutil"
@@ -507,7 +505,7 @@ func showKubectlInfo(kcs *kubeconfig.Settings, k8sVersion, rtime, machineName st
 
 	if client.Major != cluster.Major || minorSkew > 1 {
 		out.Ln("")
-		out.WarningT("{{.path}} is version {{.client_version}}, which may have incompatibilites with Kubernetes {{.cluster_version}}.",
+		out.WarningT("{{.path}} is version {{.client_version}}, which may have incompatibilities with Kubernetes {{.cluster_version}}.",
 			out.V{"path": path, "client_version": client, "cluster_version": cluster})
 		out.Infof("Want kubectl {{.version}}? Try 'minikube kubectl -- get pods -A'", out.V{"version": k8sVersion})
 	}
